@@ -43,3 +43,7 @@ input[type='button'] {
   border-radius: 8px;
   padding: 10px;
 }
+.todo.done{
+  color: grey;
+  text-decoration: line-through;
+}

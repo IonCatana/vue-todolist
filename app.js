@@ -12,11 +12,7 @@ const app = new Vue({
       {
         text: 'Portare il cane fuori',
         done: false,
-      },
-      {
-        text: 'Lavare la macchina',
-        done: false,
-      },
+      },     
       {
         text: 'Lavare la macchina',
         done: false,
@@ -26,7 +22,10 @@ const app = new Vue({
   methods: {
     addTodo: function () {
       if (this.newTodo !== '') {
-        this.todoList.push(this.newTodo);
+        this.todoList.push({
+          text: this.newTodo,
+          done: false,
+        });
         console.log(this.newTodo);
         console.log('la stringa non e vuota');
       } else {
