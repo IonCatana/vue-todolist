@@ -4,12 +4,30 @@ const app = new Vue({
   el: '#app',
   data: {
     newTodo: '',
-    todoList: ['Fare la spesa', 'Fare i compiti', 'Buttare il pattume'],
+    todoList: [
+      {
+        text: 'Dare da mangiare al gatto',
+        done: true,
+      },
+      {
+        text: 'Portare il cane fuori',
+        done: false,
+      },
+      {
+        text: 'Lavare la macchina',
+        done: false,
+      },
+      {
+        text: 'Lavare la macchina',
+        done: false,
+      },      
+    ],
   },
   methods: {
     addTodo: function () {
-      if (this.newTodo) {
+      if (this.newTodo !== '') {
         this.todoList.push(this.newTodo);
+        console.log(this.newTodo);
         console.log('la stringa non e vuota');
       } else {
         console.log('la stringa e vuota');
@@ -22,3 +40,5 @@ const app = new Vue({
     },
   },
 });
+
+

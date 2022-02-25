@@ -22,8 +22,8 @@
 
     <div class="list-wrapper">
       <ul class="todo-list">
-        <li v-for="(el,index) in todoList" class="todo">
-          {{el}}
+        <li v-for="(el,index) in todoList" class="todo" :class="{'todoList' : true, 'done' : todoList.done}">
+          {{el.text}}
           <i class="fas fa-times" @click="deleteTodo(index)"></i>
         </li>
       </ul>
