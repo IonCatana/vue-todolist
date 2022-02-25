@@ -15,7 +15,7 @@ const app = new Vue({
       },     
       {
         text: 'Lavare la macchina',
-        done: false,
+        done: true,
       },      
     ],
   },
@@ -25,13 +25,16 @@ const app = new Vue({
         this.todoList.push({
           text: this.newTodo,
           done: false,
-        });
-        console.log(this.newTodo);
+        });        
         console.log('la stringa non e vuota');
       } else {
         console.log('la stringa e vuota');
       }
       this.newTodo = '';
+    },   
+     toggleDone: function(i) {
+       this.todoList[i].done = !this.todoList[i].done;
+       console.log(this.todoList[i].done)
     },
     deleteTodo(i) {
       this.todoList.splice(i, 1); //ci permette di rimuovere e rimpiazzare '' la funzione SPLICE''
