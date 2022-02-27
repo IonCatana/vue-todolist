@@ -1,3 +1,4 @@
+/* Reset*/
 * {
   margin: 0;
   padding: 0;
@@ -41,6 +42,7 @@ input[type='button'] {
   gap: 8px;
 }
 .todo_list {
+  padding-left: 10px;
   color: green;
   font-size: 30px;
   font-weight: 800;
