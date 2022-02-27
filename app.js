@@ -1,5 +1,5 @@
 console.log('todo or not todo?');
-
+//Domanda per i tutor! c'e un modo per salvare i dati inseriti tramite l'opzione button add???
 const app = new Vue({
   el: '#app',
   data: {

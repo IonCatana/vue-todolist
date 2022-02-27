@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+h1 {
+  font-style: oblique;
+  background-color: #ddd;
+  text-align: center;
+  font-size: 40px;
+}
 .todo-input-wrapper {
   background-color: #ddd;
   padding: 20px;
@@ -32,9 +38,14 @@ input[type='button'] {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 8px;  
+  gap: 8px;
 }
-span{
+.todo_list {
+  color: green;
+  font-size: 30px;
+  font-weight: 800;
+}
+span {
   display: block;
   max-width: 90%;
   overflow-wrap: break-word;
@@ -46,9 +57,9 @@ span{
   gap: 15px;
   border: 1px solid #aaa;
   border-radius: 8px;
-  padding: 10px;  
+  padding: 10px;
 }
-.todo.done{
+.todo.done {
   color: grey;
   text-decoration: line-through;
 }

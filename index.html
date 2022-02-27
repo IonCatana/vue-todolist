@@ -15,22 +15,25 @@
 
 <body>
   <div id="app">
+    <h1>Vue Todo</h1>
     <div class="todo-input-wrapper">
       <input type="text" v-model="newTodo" @keyup.enter="addTodo">
-      <input type="button" value="add" @click="addTodo">
+      <input type="button" value="+" @click="addTodo">
     </div>
 
     <div class="list-wrapper">
       <ul class="todo-list">
-        <li v-for="(el,index) in todoList"  class="todo" @click="toggleDone(index)" :class="todoList[index].done === true ? 'done':''">
+        <span class="todo_list">Todo List:</span>
+        <li v-for="(el,index) in todoList" class="todo" @click="toggleDone(index)"
+          :class="todoList[index].done === true ? 'done':''">
           <span>
             {{el.text}}
           </span>
-          <i class="fas fa-times" @click="deleteTodo(index)"></i>          
+          <i class="fas fa-times" @click="deleteTodo(index)"></i>
         </li>
       </ul>
-    </div>    
-  </div>  
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
   <script src="app.js"></script>
