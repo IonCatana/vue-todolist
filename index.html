@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
   <title>Vue TodoList</title>
 </head>
 <!-- Body -->
+
 <body>
 
   <!-- div id #app -->
@@ -22,8 +24,8 @@
       <input type="text" v-model="newTodo" @keyup.enter="addTodo">
       <input type="button" value="+" @click="addTodo">
     </div>
-    
-<!-- List wrapper -->
+
+    <!-- List wrapper -->
     <div class="list-wrapper">
       <ul class="todo-list">
         <span class="todo_list">Todo List:</span>
@@ -38,7 +40,7 @@
     </div>
   </div>
 
-<!-- Vue link -->
+  <!-- Vue link -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
   <script src="app.js"></script>
 </body>
