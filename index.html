@@ -33,6 +33,7 @@
           :class="todoList[index].done === true ? 'done':''">
           <span>
             {{el.text}}
+
           </span>
           <i class="fas fa-times" @click="deleteTodo(index)"></i>
         </li>
